@@ -1,0 +1,508 @@
+@charset "utf-8";
+
+/*
+Theme Name: blog-html
+Author: Naomi Kumazaki
+Description: WordPressを学んで、最初のテーマです。
+Version: 1.0
+Requires at least: 6.0
+Tested up to: 7.1
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bear-html
+*/
+
+/* 共有部分
+--------------------------------*/
+
+body {
+    color: #000;
+    font-size: 14px;
+    font-family: 'Inter';
+    line-height: 1.2;
+    letter-spacing: 0em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    padding: 82px 0 38px;
+    color: #2f4f4f;
+    font-size: 40px;
+    font-family: 'A P-OTF Keyaki Go Ost Min2';
+    line-height: 2;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin: 75px auto 35px;
+    color: #2f4f4f;
+    font-size: 48px;
+    font-family: 'A P-OTF Keyaki Go Ost Min2';
+    line-height: 2;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    color: #2f4f4f;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.inner {
+    max-width: 1366px;
+    width: 89.7%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: 6px 0;
+    background-color: rgba(46, 46, 46, 0.5);
+}
+
+header img {
+    max-width: 44px;
+    height: auto;
+    margin-left: 24px;
+    margin-right: auto;
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gnav ul {
+    display: flex;
+    gap: 18px;
+}
+
+.gnav a {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'A P-OTF Keyaki Go Ost Min2';
+    line-height: 2;
+}
+
+.gnav a:hover {
+    color: #8b0000;
+}
+
+.about h4,
+.skill h4 {
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+.about h4,
+.skill h4 {
+    display: grid;
+    justify-content: center;
+}
+
+.skill-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 32px;
+}
+
+.about dt,
+.about dd,
+.skill dt,
+.skill dd {
+    display: grid;
+    justify-content: center;
+}
+
+.about-pic {
+    display: grid;
+    justify-content: center;
+    width: 200px;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 64px;
+}
+
+/* footer */
+
+footer {
+    background-color: #8b0000;
+}
+
+footer p {
+    width: 168px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 162px 0 160px;
+    color: #fff;
+    font-size: 10px;
+}
+
+/* post */
+
+main {
+    background-color: #ffffe0;
+}
+
+.mainvisual {
+    background: url(./images/kaiko_mainvi.svg) no-repeat center center / cover;
+}
+
+.side-list {
+    display: grid;
+    justify-content: center;
+    row-gap: 10px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.prof-img {
+    display: grid;
+    justify-content: center;
+    row-gap: 40px;
+    padding-bottom: 88px;
+}
+
+.prof-img img {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prof-text {
+    width: 300px;
+    height: 200px;
+    background-color: #c19a6b;
+}
+
+.prof-text h4 {
+    padding: 24px 24px 16px;
+}
+
+.prof-text p {
+    padding: 0 24px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+}
+
+.search-field {
+    margin-top: 1px;
+    padding: 5px;
+    background-color: #f5f5f5;
+}
+
+.search-submit {
+    margin-left: 10px;
+    padding: 6px;
+    color: #f5f5f5;
+    background-color: #d2691e;
+}
+
+/*index.html
+--------------------------------*/
+
+.pages {
+    display: grid;
+    justify-content: center;
+    row-gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post {
+    width: 296px;
+    height: auto;
+}
+
+.post-text {
+    margin-top: 64px;
+    padding: 24px;
+    background-color: #c19a6b;
+}
+
+.nav-page ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 27px;
+    margin-top: 40px;
+    font-size: 36px;
+    font-family: 'A P-OTF Keyaki Go Ost Min2';
+}
+
+.btn1 {
+    padding: 17px 27px;
+    border-radius: 50px;
+    background-color: #f4a198;
+}
+
+.btn2 {
+    padding: 17px 24px;
+    border-radius: 50px;
+    background-color: #98ff98;
+}
+
+.btnnext {
+    padding: 5px 15px 10px;
+    font-size: 48px;
+    background-color: #40e0d0;
+}
+
+.nav-page {
+    color: #2f4f4f;
+}
+
+/*single.html
+--------------------------------*/
+
+.main-blog h5 {
+    display: flex;
+    justify-content: center;
+    padding-top: 106px;
+    padding-bottom: 64px;
+    background: url(./images/kaiko_frameup.svg) no-repeat center top 40px / 100%;
+}
+
+.main-contents {
+    width: 326px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.uplord {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+
+.update {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.main-sentence {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+    background-color: #c19a6b;
+}
+
+.main-sentence p {
+    line-height: 1.7;
+}
+
+.post-info {
+    margin-bottom: 32px;
+    font-weight: bold;
+}
+
+.btnback {
+    text-align: center;
+    padding-bottom: 48px;
+    background: url(./images/kaiko_framedown.svg) no-repeat center bottom / 100%;
+}
+
+.btnback li {
+    display: inline-block;
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'A P-OTF Keyaki Go Ost Min2';
+    line-height: 2;
+    border: 1px solid #ffffe0;
+    background-color: #d2691e;
+}
+
+.comments-area {
+    font-family: 'Inter';
+}
+
+.comments-area .title_reply {
+    font-family: 'A P-OTF Keyaki Go Ost Min2';
+}
+
+.comments-area label {
+    color: #2f4f4f;
+    font-weight: bold;
+}
+
+.comments-area .comment-form-author {
+    margin-bottom: 10px;
+}
+
+.comments-area input {
+    margin-left: 5px;
+}
+
+.comments-area .comment-form-comment {
+    margin-bottom: 10px;
+}
+
+.comments-area textarea {
+    margin-left: 5px;
+}
+
+.comments-area .comment-meta {
+    background-color: #ffffe0;
+}
+
+.comments-area .comment-content,
+.comments-area .reply {
+    background-color: #f5f5f5;
+}
+
+.comments-area .reply {
+    margin-bottom: 16px;
+    padding-top: 3px;
+    padding-bottom: 1px;
+}
+
+input,
+textarea {
+    border: 1px solid;
+}
+
+.comments-area .submit {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: none;
+    color: #f5f5f5;
+    background-color: #d2691e;
+}
+
+.comments-area .comment-reply-link {
+    padding: 2px;
+    border-bottom: 1px solid #d2691e;
+    font-weight: bold;
+}
+
+/*メディアクエリ
+--------------------------------*/
+@media (740px < width) {
+    /* 共有部分
+--------------------------------*/
+
+    h2 {
+        padding: 180px 0 132px;
+        font-size: 96px;
+    }
+
+    h3 {
+        margin: 150px auto 130px;
+        font-size: 64px;
+    }
+
+    h5 {
+        font-size: 48px;
+    }
+
+    /* header */
+
+    .gnav ul {
+        gap: 36px;
+    }
+
+    .gnav a {
+        font-size: 36px;
+    }
+
+    /* post */
+
+    .cat-arc {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .categ-tag {
+        grid-template-columns: 250px 250px 250px;
+        gap: 48px 64px;
+    }
+
+    .prof-img {
+        grid-template-columns: 200px 300px;
+        gap: 0 48px;
+        padding-bottom: 192px;
+    }
+
+    /*index.html
+--------------------------------*/
+
+    .pages {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*single.html
+--------------------------------*/
+
+    .main-blog h5 {
+        padding-top: 265px;
+        padding-bottom: 176px;
+        background: url(./images/kaiko_frameup.svg) no-repeat center top 65px / 100%;
+    }
+
+    .main-contents {
+        width: auto;
+    }
+
+    .uplord {
+        margin-bottom: 29px;
+    }
+
+    .update {
+        margin-bottom: 32px;
+    }
+
+    .main-sentence {
+        margin-top: 48px;
+        margin-bottom: 48px;
+        padding: 24px;
+    }
+
+    .btnback {
+        padding-bottom: 120px;
+    }
+
+    .btnback li {
+        padding: 20px 60px;
+        font-size: 40px;
+    }
+
+    .comments-area .submit {
+        margin-left: 60px;
+    }
+
+}

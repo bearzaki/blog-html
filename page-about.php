@@ -12,7 +12,7 @@
                 <div class="about-item">
                     <dt>略歴</dt>
                     <dd>
-                        2026年4月にトライデントコンピュータ専門学校に入学。一人前のクリエイターになるべく、HTML、CSSを中心にWebデザインを学んでいる。
+                        2026年4月にトライデントコンピュータ専門学校に入学。一人前のクリエイターになるべく、HTMLやCSS、Figmaを中心にWebデザインを学んでいる。
                     </dd>
                 </div>
             </dl>
@@ -24,15 +24,19 @@
             <dl class="skill-all">
                 <div class="skill-item">
                     <dt>Illustrator</dt>
-                    <dd>★★★☆☆</dd>
-                </div>
-                <div class="skill-item">
-                    <dt>Photoshop</dt>
                     <dd>★★☆☆☆</dd>
                 </div>
                 <div class="skill-item">
+                    <dt>Photoshop</dt>
+                    <dd>★☆☆☆☆</dd>
+                </div>
+                <div class="skill-item">
+                    <dt>Figma</dt>
+                    <dd>★★★☆☆</dd>
+                </div>
+                <div class="skill-item">
                     <dt>HTML+CSS</dt>
-                    <dd>★★★★☆</dd>
+                    <dd>★★★☆☆</dd>
                 </div>
                 <div class="skill-item">
                     <dt>JavaScript</dt>

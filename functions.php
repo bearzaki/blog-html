@@ -82,3 +82,11 @@ function reorder_comment_field($fields)
     return $new_fields;
 }
 add_filter('comment_form_fields', 'reorder_comment_field');
+
+function restrict_search_to_posts($query)
+{
+    if (! is_admin() && $query->is_main_query() && $query->is_search()) {
+        $query->set('post_type', 'post');
+    }
+}
+add_action('pre_get_posts', 'restrict_search_to_posts');

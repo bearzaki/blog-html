@@ -5,7 +5,7 @@
             <?php if (has_post_thumbnail()):
                 the_post_thumbnail('large');
             else: ?>
-                <img src="<?php echo esc_url(get_theme_file_uri('./images/blog_kininarukigyou.png')); ?>" alt="">
+                <img src="<?php echo esc_url(get_theme_file_uri('./images/hurikaeri_blog.jpg')); ?>" alt="">
             <?php endif; ?>
         </div>
         <img src="<?php echo esc_url(get_theme_file_uri('./images/kaiko_degine2.svg')); ?>" alt="">

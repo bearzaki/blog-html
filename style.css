@@ -437,6 +437,13 @@ textarea {
     font-weight: bold;
 }
 
+h3 .comment-reply-title,
+.comment-reply-title a,
+.comment-reply-title .comment-reply-link {
+    display: flex;
+    font-size: 16px;
+}
+
 /*メディアクエリ
 --------------------------------*/
 @media (740px < width) {
